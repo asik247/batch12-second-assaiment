@@ -1,0 +1,98 @@
+* {
+  font-family: "Noto Serif", serif;
+}
+/* common style */
+.container {
+  max-width: 1140px;
+  margin: 30px auto;
+}
+.flex {
+  display: flex;
+}
+.text-gray {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+/* add to card icon */
+/* <i class="fa-solid fa-cart-plus"></i> */
+
+/* header code start here */
+.header-main {
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+.logo {
+  width: 130px;
+  height: 80px;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+nav ul li i {
+  /* color: rgba(0, 0, 0, 0.5); */
+  color: black;
+}
+.active {
+  color: black;
+}
+/* Banner section code */
+.banner-section {
+    /* border: 5px solid black; */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+}
+.banner-title{
+   margin-top: 163px;
+}
+.banner-title h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height:80px;
+    letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: black;
+}
+.banner-title span{
+    color: rgb(233, 90, 8);
+}
+.banner-images{
+    width: 100%;
+    margin-top: 108px;
+    /* border: 1px solid red; */
+}
+
+
+
+/* responsive for mobile */
+@media screen and (max-width:576px) {
+     nav ul li a{
+        display: none;
+     }
+     .logo img{
+        width: 63px;
+        height: 38px;
+        margin-top:12px;
+     }
+     nav ul li i{
+       font-size: 16px;
+       font-weight: 400;
+     }
+    .banner-section{
+        flex-direction: column-reverse;
+    }
+    .banner-images{
+        width: 100%;
+    }
+    .banner-title{
+        justify-items: center;
+    }
+}
