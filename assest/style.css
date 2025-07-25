@@ -543,7 +543,7 @@ button:focus {
   }
   /* footer */
   .footer-title {
-    margin-bottom: 30px;
+    margin-bottom:20px;
   }
   .footer-main {
     flex-direction: column;
@@ -555,8 +555,10 @@ button:focus {
   .links {
     grid-template-columns: 1fr;
   }
-  .icon {
-    margin: 10px 40px;
+  .icon img{
+    display: flex;
+    padding:5px 10px;
+    margin-left: 20px;
     text-align: start;
   }
   .footer-section {
