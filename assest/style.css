@@ -155,6 +155,9 @@ h4 {
   margin: 30px 0;
 }
 /* Latest Deals code  */
+.latest-title span {
+  color: #e95a08;
+}
 .latest-title {
   margin-bottom: 70px;
   justify-items: center;
@@ -271,6 +274,11 @@ h4 {
   display: block;
 }
 /* bunch section */
+.bunch-section {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .bck-title {
   position: absolute;
   z-index: 1;
@@ -317,6 +325,46 @@ button:focus {
 .bck-img img {
   width: 100%;
   height: 60vh;
+}
+/* footer code start here */
+.footer-section {
+  width: 100%;
+  height: 250px;
+  margin: auto;
+}
+.footer-main {
+  width: 1120px;
+  margin: 50px auto;
+}
+.footer-title {
+  flex: 80px;
+  overflow: hidden;
+  padding: 0 50px;
+}
+.logo p {
+  width: 250px;
+}
+.links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  flex: 60px;
+  text-align: justify;
+  padding: 0 50px;
+}
+.links a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: capitalize;
+}
+.icon {
+  flex: 1;
+  margin: 0 10px;
+  width: 216px;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /* responsive for mobile */
 
@@ -455,7 +503,7 @@ button:focus {
   }
   .left-side-images img,
   .right-side-images img {
-    filter: brightness(80%) blur(0.7px);
+    filter: brightness(50%) blur(0.9px);
     width: 100%;
     display: block;
   }
@@ -467,6 +515,11 @@ button:focus {
     line-height: 20px;
   }
   /* bucn section */
+
+  .bunch-section {
+    width: 100%;
+    margin: 0 auto;
+  }
   .bck-title h2 {
     font-size: 18px;
   }
@@ -487,5 +540,34 @@ button:focus {
     height: 50px;
     border: none;
     padding: 0 10px;
+  }
+  /* footer */
+  .footer-title {
+    margin-bottom: 30px;
+  }
+  .footer-main {
+    flex-direction: column;
+  }
+  .logo p {
+    font-size: 10.5px;
+    /* width: 280px; */
+  }
+  .links {
+    grid-template-columns: 1fr;
+  }
+  .icon {
+    margin: 10px 40px;
+    text-align: start;
+  }
+  .footer-section {
+    width: 100%;
+    height: 350px;
+    margin: auto;
+  }
+  .footer-section {
+    width: 100%;
+    height: 68vh;
+    margin: auto;
+    overflow: hidden;
   }
 }
